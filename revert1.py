@@ -1,1 +1,2 @@
-print("revert");
+print("revert")
+print("1")

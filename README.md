@@ -1,4 +1,7 @@
-# GithubTest
-Test Repository for using github
-Philip
-checkout test
+# UnitTest(Educational)
+Partial Code Test Directories
+
+of
+
+JavaScript
+

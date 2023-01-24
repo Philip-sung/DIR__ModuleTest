@@ -1,5 +1,5 @@
 const a = 'module from A'
-const b = require('./ModuleExportTestB.js')
+const b = require('./002.ModuleExportTestB.js')
 
 console.log(b + ' in a.js')
 

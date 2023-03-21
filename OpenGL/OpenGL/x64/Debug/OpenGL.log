@@ -1,0 +1,4 @@
+﻿  OpenGL.cpp
+C:\Users\admin\Desktop\temp\test1\OpenGL\OpenGL.cpp(50,21): error C2065: 'window': undeclared identifier
+C:\Users\admin\Desktop\temp\test1\OpenGL\OpenGL.cpp(53,23): error C2065: 'context': undeclared identifier
+C:\Users\admin\Desktop\temp\test1\OpenGL\OpenGL.cpp(54,20): error C2065: 'window': undeclared identifier

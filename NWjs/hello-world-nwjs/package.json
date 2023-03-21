@@ -1,0 +1,8 @@
+{
+    "name": "hello-world-nwjs",
+    "main": "index.html",
+    "version": "1.0.0",
+    "dependencies": {
+        "nw-builder": "^4.0.8"
+    }
+}

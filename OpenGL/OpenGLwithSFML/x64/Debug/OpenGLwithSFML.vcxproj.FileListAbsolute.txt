@@ -1,1 +1,2 @@
 C:\Users\admin\Desktop\temp\test1\OpenGLwithSFML\x64\Debug\OpenGLwithSFML.exe
+C:\Users\admin\Desktop\Github\UnitTest\OpenGL\OpenGLwithSFML\x64\Debug\OpenGLwithSFML.exe

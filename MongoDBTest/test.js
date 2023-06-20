@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const url = 'mongodb://PServerRoot:sung0628@122.47.75.171:27017'
+const url = 'mongodb:/id:pw@122.47.75.171:27017'
 const client = new MongoClient(url);
 
 const dbName = 'pserver';

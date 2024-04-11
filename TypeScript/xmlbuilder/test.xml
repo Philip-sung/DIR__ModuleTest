@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<test>
+  <TagNameA/>
+  <TagNameB>ContentB</TagNameB>
+  <TagNameC>TextC</TagNameC>
+  <TagNameD attributeD="attributeD">TextD</TagNameD>
+  <TagNameE attributeE="attributeE" secAttE="secondAttributeE">TextD</TagNameE>
+</test>

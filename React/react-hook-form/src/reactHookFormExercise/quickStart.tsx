@@ -16,10 +16,7 @@ export const QuickStartExercise = () => {
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input defaultValue={"A"} {...register("formDataA")} />
-        <input
-          defaultValue={"B"}
-          {...register("RequiredformDataB", { required: true })}
-        />
+        <input {...register("RequiredformDataB", { required: true })} />
         {formState.errors.RequiredformDataB && "This Field is required"}
         <input type={"submit"} />
       </form>

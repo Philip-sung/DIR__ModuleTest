@@ -5,26 +5,41 @@ import {
   useForm,
 } from "react-hook-form";
 
-export const UseControllerExercise = () => {
-  const { control, handleSubmit } = useForm();
+type UseControllerType = {
+  dataA: string;
+  requiredDataB: string;
+}
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => console.log(data);
+export const UseControllerExercise = () => {
+  const { control, handleSubmit, formState } = useForm<UseControllerType>();
+
+  const onSubmit: SubmitHandler<UseControllerType> = (data) => console.log(data);
 
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Controller
-          name="firstName"
+          name="dataA"
           control={control}
-          defaultValue="Controller Exercise DefaultValue"
+          defaultValue="A"
           render={({ field }) => <CustomTextField {...field}></CustomTextField>}
         />
+        
+        <Controller
+          name="requiredDataB"
+          control={control}
+          rules={{required: true}}
+          defaultValue="B"
+          render={({ field }) => <CustomTextField {...field}></CustomTextField>}
+        />
+        {formState.errors.requiredDataB && "requiredDataB Field is required"}
+
         <input type="submit" />
       </form>
     </>
   );
 };
 
-const CustomTextField = (props: { name: string }) => {
-  return <input defaultValue={props.name} type="text"></input>;
+const CustomTextField = (props: FieldValues) => {
+  return <input {...props} type="text"></input>;
 };

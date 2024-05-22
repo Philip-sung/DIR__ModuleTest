@@ -1,30 +1,6 @@
-# React + TypeScript + Vite
+## 1. Mock Service Worker (MSW)
+MSW는 2024년 5월 현재 종종 사용되는 서버 모킹 라이브러리 중 하나이다. 이 라이브러리는 실제 HTTP 요청을 가로채어 로컬에서 처리함으로써, 프론트엔드와 백엔드 간의 통합 테스트를 용이하게 한다. TypeScript와 잘 호환되며, 실제 브라우저 환경에서도 그대로 사용할 수 있어서 개발 및 테스트 시 유용하다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- 실제 네트워크 요청 가로채기: MSW는 실제 네트워크 요청을 가로채어 로컬에서 응답을 생성할 수 있다.
+- 플랫폼 독립성: 브라우저와 Node.js 환경 모두에서 작동하므로, SSR(Server-Side Rendering)과 같은 환경에서도 유용하다.
+- TypeScript 지원: 타입 안정성을 보장하며 TypeScript 프로젝트에 쉽게 통합할 수 있다.

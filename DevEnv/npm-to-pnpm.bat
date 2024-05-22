@@ -19,6 +19,7 @@ if exist "node_modules" (
 	echo remove "node_modules" directory
 	rmdir /S /Q "node_modules"
 	if exist "package-lock.json" (
+		echo remove "package-lock.json"
 		del "package-lock.json"
 	)
 ) else (

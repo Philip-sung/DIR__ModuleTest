@@ -28,12 +28,12 @@ export const sanitizeTextInput = (text) => {
 };
 
 const inputSanitizationForEachCharacter = (char) => {
-  if (checkIfSpecialCharacter(char)) return char;
+  if (checkIfUnicodeLetterOrNumberCharacter(char)) return char;
 
   return null;
 };
 
-const checkIfSpecialCharacter = (char) => {
+const checkIfUnicodeLetterOrNumberCharacter = (char) => {
   if (char.length !== 1) return null;
   const unicodeLetterAndNumberRegex = /[\p{L}\p{N}]/u;
   return (

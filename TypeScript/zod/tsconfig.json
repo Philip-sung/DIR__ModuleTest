@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./dist",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "strictNullChecks": true
+  }
+}

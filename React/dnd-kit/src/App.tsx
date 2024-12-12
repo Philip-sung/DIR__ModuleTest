@@ -1,13 +1,11 @@
-import { DndContext } from "@dnd-kit/core";
-
-import { Draggable } from "./Draggable";
-import { Droppable } from "./Droppable";
+import { QuickStart } from "./00_QuickStart";
+import { PresetSortable } from "./01_PresetSortable";
 
 export default function App() {
   return (
-    <DndContext>
-      <Draggable />
-      <Droppable />
-    </DndContext>
+    <>
+      <QuickStart />
+      <PresetSortable />
+    </>
   );
 }
